@@ -16,14 +16,7 @@ def prompt_user
 end
 
 def get_user_input
-  n = gets.chomp
-  p n
-  if n != "h"
-    if n != "s"
-      invalid_command
-    end
-  end
-  n
+  gets.chomp
 end
 
 def end_game(ct)
@@ -44,10 +37,13 @@ end
 def hit?(total)
   prompt_user
   call = get_user_input
-  if (call == "h" || "s")
-    call == "h" ? total += deal_card : total
-    total
+  if call != "h"
+    if call != "s"
+      invalid_command
+      prompt_user
+    end
   end
+  call = h ? total += deal_card : total
 end
 
 
