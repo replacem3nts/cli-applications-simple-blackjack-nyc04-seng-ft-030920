@@ -44,6 +44,7 @@ def hit?(total)
     if call != "s"
       invalid_command
       prompt_user
+      get_user_input
     end
   end
   total
