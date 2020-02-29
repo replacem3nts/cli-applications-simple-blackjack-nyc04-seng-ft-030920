@@ -42,7 +42,6 @@ def hit?(total)
   end
   if call != "h"
     if call != "s"
-      prompt_user
       invalid_command
       prompt_user
     end
