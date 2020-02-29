@@ -27,7 +27,7 @@ def initial_round
   ct = 0
   2.times {ct += deal_card}
   display_card_total(ct)
-  p ct
+  ct
 end
 
 def invalid_command
@@ -58,7 +58,7 @@ end
 
 def runner
   welcome
-  initial_round
+  total = initial_round
   hit?(total)
   end_game
 end
