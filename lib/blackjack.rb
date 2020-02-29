@@ -39,13 +39,13 @@ def hit?(total)
   call = get_user_input
   if (call == "h" || "s")
     call == "h" ? total += deal_card : total
-    total
   end
   if call != "h"
     if call != "s"
       invalid_command
     end
   end
+  total
 end
 
 
