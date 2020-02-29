@@ -17,7 +17,7 @@ end
 
 def get_user_input
   n = gets.chomp
-  if n != ("h" || "s")
+  if (n != "h" || "s")
     p invalid_command
   end
   n
