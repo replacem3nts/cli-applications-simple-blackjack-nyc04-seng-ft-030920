@@ -19,9 +19,8 @@ def get_user_input
   n = gets.chomp
   if n != ("h" || "s")
     p invalid_command
-  else
-   n
   end
+  n
 end
 
 def end_game(ct)
