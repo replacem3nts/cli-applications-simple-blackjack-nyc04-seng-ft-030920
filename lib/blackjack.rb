@@ -45,7 +45,7 @@ def hit?(total)
       end
     end
   if (call == "h" || "s")
-    call == "h" ? total += deal_card : prompt_user
+    call == "h" ? total += deal_card : total
   end
   total
 end
