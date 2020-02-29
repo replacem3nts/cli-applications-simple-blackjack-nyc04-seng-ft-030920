@@ -38,12 +38,12 @@ def hit?(total)
   prompt_user
   call = get_user_input
     if call != "h"
-    if call != "s"
-      invalid_command
-      prompt_user
-      get_user_input
+      if call != "s"
+        invalid_command
+        prompt_user
+        get_user_input
+      end
     end
-  end
   if (call == "h" || "s")
     call == "h" ? total += deal_card : total
   end
@@ -57,6 +57,8 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  hit?(total)
 end
     
