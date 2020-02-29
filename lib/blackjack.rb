@@ -16,11 +16,11 @@ def prompt_user
 end
 
 def get_user_input
-  binding.pry
-  if gets.chomp != ("h" || "s")
+  n = gets.chomp
+  if n != ("h" || "s")
     invalid_command
   else
-    gets.chomp
+    n
   end
 end
 
