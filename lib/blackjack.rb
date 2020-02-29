@@ -20,7 +20,7 @@ def get_user_input
   if n != ("h" || "s")
     invalid_command
   else
-    n
+   puts n
   end
 end
 
