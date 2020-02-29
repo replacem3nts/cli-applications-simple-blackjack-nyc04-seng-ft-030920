@@ -17,7 +17,9 @@ end
 
 def get_user_input
   n = gets.chomp
+  p n
   if (n != "h" || "s")
+    p n
     p invalid_command
   end
   n
@@ -41,7 +43,7 @@ end
 def hit?(total)
   prompt_user
   call = get_user_input
-if (call == "h" || "s")
+  if (call == "h" || "s")
     call == "h" ? total += deal_card : total
     total
   end
