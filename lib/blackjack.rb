@@ -43,7 +43,7 @@ def hit?(total)
       prompt_user
     end
   end
-  call = h ? total += deal_card : total
+  call = "h" ? total += deal_card : total
 end
 
 
