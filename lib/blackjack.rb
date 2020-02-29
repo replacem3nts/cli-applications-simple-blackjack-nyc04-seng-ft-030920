@@ -16,14 +16,7 @@ def prompt_user
 end
 
 def get_user_input
-  n = gets.chomp
-  p n
-  if n != "h"
-    if n != "s"
-      invalid_command
-    end
-  end
-  n
+  gets.chomp
 end
 
 def end_game(ct)
