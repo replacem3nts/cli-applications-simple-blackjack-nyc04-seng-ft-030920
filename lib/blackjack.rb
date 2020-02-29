@@ -60,5 +60,6 @@ def runner
   welcome
   initial_round
   hit?(total)
+  end_game
 end
     
