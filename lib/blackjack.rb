@@ -43,6 +43,7 @@ def hit?(total)
   if call != "h"
     if call != "s"
       invalid_command
+      prompt_user
     end
   end
   total
